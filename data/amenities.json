@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "Free Wi-Fi",
+    "description": "Stay connected with high-speed internet throughout the resort."
+  },
+  {
+    "id": 2,
+    "name": "Swimming Pool",
+    "description": "An infinity pool with stunning ocean views."
+  },
+  {
+    "id": 3,
+    "name": "Spa",
+    "description": "A full-service spa offering massages and beauty treatments."
+  },
+  {
+    "id": 4,
+    "name": "Free Breakfast",
+    "description": "Start your day with a delicious continental breakfast."
+  },
+  {
+    "id": 5,
+    "name": "Hot Tub",
+    "description": "Relax and unwind in the outdoor hot tub."
+  },
+  {
+    "id": 6,
+    "name": "Sauna",
+    "description": "Recharge in the sauna after a day of outdoor activities."
+  },
+  {
+    "id": 7,
+    "name": "Fitness Center",
+    "description": "A fully equipped fitness center to keep you active during your stay."
+  },
+  {
+    "id": 8,
+    "name": "24/7 Concierge",
+    "description": "Our concierge service is available around the clock to assist with your needs."
+  },
+  {
+    "id": 9,
+    "name": "Restaurant",
+    "description": "Enjoy gourmet meals at our on-site restaurant with a city view."
+  },
+  {
+    "id": 10,
+    "name": "Private Beach",
+    "description": "Exclusive access to the resort's private beach."
+  },
+  {
+    "id": 11,
+    "name": "Water Sports",
+    "description": "Enjoy a variety of water sports including jet skiing, snorkeling, and diving."
+  },
+  {
+    "id": 12,
+    "name": "Room Service",
+    "description": "24/7 room service available for your convenience."
+  },
+  {
+    "id": 13,
+    "name": "Rooftop Bar",
+    "description": "Sip cocktails while enjoying the stunning view of Tokyo's skyline."
+  },
+  {
+    "id": 14,
+    "name": "Private Pool",
+    "description": "Each villa has a private pool with a view of the desert."
+  },
+
+  {
+    "id": 15,
+    "name": "Air Conditioning",
+    "description": "Maintain the perfect room temperature with air conditioning."
+  }
+]

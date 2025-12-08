@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Bali",
+    "description": "A tropical paradise in Indonesia, famous for its beaches, temples, and cultural heritage."
+  },
+  {
+    "id": 2,
+    "name": "Swiss Alps",
+    "description": "A breathtaking mountain region known for skiing, hiking, and panoramic alpine landscapes."
+  },
+  {
+    "id": 3,
+    "name": "New York",
+    "description": "The bustling city that never sleeps, full of iconic landmarks, museums, and vibrant nightlife."
+  },
+  {
+    "id": 4,
+    "name": "Maldives",
+    "description": "A luxury island destination known for crystal-clear waters, coral reefs, and overwater villas."
+  },
+  {
+    "id": 5,
+    "name": "Tokyo",
+    "description": "The bustling capital of Japan, known for its advanced technology, shopping, and unique blend of old and new."
+  },
+  {
+    "id": 6,
+    "name": "Dubai",
+    "description": "A modern city in the UAE known for luxury shopping, skyscrapers, sand dunes, and futuristic attractions."
+  },
+  {
+    "id": 7,
+    "name": "San Diego",
+    "description": "A coastal city in California famous for its beaches, sunny climate, and laid-back lifestyle."
+  },
+  {
+    "id": 8,
+    "name": "Whistler",
+    "description": "A mountain town in Canada known for skiing, snowboarding, and outdoor adventures."
+  },
+  {
+    "id": 9,
+    "name": "Paris",
+    "description": "The romantic capital of France, famous for the Eiffel Tower, museums, fashion, and gourmet cuisine."
+  },
+  {
+    "id": 10,
+    "name": "Kruger National Park",
+    "description": "One of Africa’s largest wildlife reserves, known for safari tours and diverse animal species."
+  },
+  {
+    "id": 11,
+    "name": "London",
+    "description": "The capital of England, famous for its historical landmarks, museums, and theaters."
+  },
+  {
+    "id": 12,
+    "name": "Rome",
+    "description": "The capital of Italy, known for its ancient history, stunning architecture, and delicious food."
+  }
+]

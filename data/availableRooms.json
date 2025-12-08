@@ -1,0 +1,92 @@
+[
+  {
+    "roomId": 201,
+    "roomNumber": 101,
+    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiV-zO8KiAssWgdTgs5duPvyZJ-wFt_R9Kg&s",
+    "roomType": "Deluxe Suite",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 2,
+    "roomAmenities": [
+      {
+        "id": 1,
+        "name": "Free Wi-Fi",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": 2,
+        "name": "Air Conditioning",
+        "description": "Individually controlled air conditioning"
+      }
+    ],
+    "price": 250.0,
+    "availability": true
+  },
+  {
+    "roomId": 202,
+    "roomNumber": 102,
+    "roomPhotoUrl": "https://nexthotelmelbourne.com/wp-content/uploads/2024/03/Next-Level-King-Room-scaled.jpg",
+    "roomType": "Standard Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "roomAmenities": [
+      {
+        "id": 3,
+        "name": "Flat-screen TV",
+        "description": "Includes international channels"
+      }
+    ],
+    "price": 150.0,
+    "availability": true
+  },
+  {
+    "roomId": 103,
+    "roomNumber": 3,
+    "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/486145081.jpg?k=e8c95b71501aaaae48bbcebb7ac8ae37c892873a4be235240cc12c31168425c3&o=&hp=1",
+    "roomType": "Standard Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "roomAmenities": [
+      {
+        "id": 5,
+        "name": "Heating",
+        "description": "Adjustable heating system"
+      }
+    ],
+    "price": 150.0,
+    "availability": false
+  },
+  {
+    "roomId": 204,
+    "roomNumber": 104,
+    "roomPhotoUrl": "https://www.landmarklondon.co.uk/wp-content/uploads/2024/06/The-Landmark-Suite-Interior1975-1-1800x1200.jpg",
+    "roomType": "Family Room",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 3,
+    "roomAmenities": [
+      {
+        "id": 6,
+        "name": "Kitchenette",
+        "description": "Includes a microwave and fridge"
+      }
+    ],
+    "price": 400.0,
+    "availability": true
+  },
+  {
+    "roomId": 207,
+    "roomNumber": 107,
+    "roomPhotoUrl": "https://example.com/room7.jpg",
+    "roomType": "Standard Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "roomAmenities": [
+      {
+        "id": 10,
+        "name": "Coffee Maker",
+        "description": "Complimentary coffee and tea"
+      }
+    ],
+    "price": 120.0,
+    "availability": true
+  }
+]

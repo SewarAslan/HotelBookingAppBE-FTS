@@ -1,0 +1,282 @@
+[
+  {
+    "hotelId": 1,
+    "hotelName": "Sunset Resort",
+    "starRating": 5,
+    "latitude": -8.3405,
+    "longitude": 115.0915,
+    "roomPrice": 500.0,
+    "roomType": "Ocean View Suite",
+    "cityName": "Bali",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 15,
+    "amenities": [
+      {
+        "id": 1,
+        "name": "Free Wi-Fi",
+        "description": "Stay connected with high-speed internet throughout the resort."
+      },
+      {
+        "id": 2,
+        "name": "Swimming Pool",
+        "description": "An infinity pool with stunning ocean views."
+      }
+    ],
+    "numberOfChildren": 2,
+    "numberOfAdults": 2,
+    "numberOfRooms": 1,
+    "checkInDate": "2025-01-31",
+    "checkOutDate": "2025-02-01"
+  },
+  {
+    "hotelId": 2,
+    "hotelName": "Mountain Escape",
+    "starRating": 4,
+    "latitude": 39.7392,
+    "longitude": -104.9903,
+    "roomPrice": 250.0,
+    "roomType": "Deluxe Room",
+    "cityName": "Denver",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611971263023-105938ce12ed?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 10,
+    "amenities": [
+      {
+        "id": 3,
+        "name": "Gym",
+        "description": "Fully equipped gym with modern fitness equipment."
+      },
+      {
+        "id": 4,
+        "name": "Spa",
+        "description": "Relax and rejuvenate with spa treatments."
+      }
+    ],
+    "numberOfChildren": 0,
+    "numberOfAdults": 2,
+    "numberOfRooms": 1,
+    "checkInDate": "2025-02-10",
+    "checkOutDate": "2025-02-15"
+  },
+  {
+    "hotelId": 3,
+    "hotelName": "City Lights Hotel",
+    "starRating": 3,
+    "latitude": 51.5074,
+    "longitude": -0.1278,
+    "roomPrice": 180.0,
+    "roomType": "Standard Room",
+    "cityName": "London",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 20,
+    "amenities": [
+      {
+        "id": 5,
+        "name": "24/7 Reception",
+        "description": "Always available to assist you with anything you need."
+      }
+    ],
+    "numberOfChildren": 1,
+    "numberOfAdults": 2,
+    "numberOfRooms": 1,
+    "checkInDate": "2025-03-01",
+    "checkOutDate": "2025-03-05"
+  },
+  {
+    "hotelId": 4,
+    "hotelName": "Tropical Paradise",
+    "starRating": 5,
+    "latitude": -3.1659,
+    "longitude": 102.0413,
+    "roomPrice": 600.0,
+    "roomType": "Beachfront Villa",
+    "cityName": "Maldives",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611971262702-ed56db509bd9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 25,
+    "amenities": [
+      {
+        "id": 6,
+        "name": "Private Pool",
+        "description": "Enjoy a private pool with a stunning view."
+      },
+      {
+        "id": 7,
+        "name": "Personal Butler",
+        "description": "A dedicated butler for all your needs."
+      }
+    ],
+    "numberOfChildren": 2,
+    "numberOfAdults": 2,
+    "numberOfRooms": 1,
+    "checkInDate": "2025-02-15",
+    "checkOutDate": "2025-02-20"
+  },
+  {
+    "hotelId": 5,
+    "hotelName": "Urban Oasis",
+    "starRating": 4,
+    "latitude": 40.7306,
+    "longitude": -73.9352,
+    "roomPrice": 350.0,
+    "roomType": "Skyline Suite",
+    "cityName": "New York",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611440691786-2d3b765a60e3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 5,
+    "amenities": [
+      {
+        "id": 8,
+        "name": "Rooftop Bar",
+        "description": "Enjoy cocktails with an amazing city view."
+      },
+      {
+        "id": 9,
+        "name": "Smart Home",
+        "description": "Rooms equipped with smart home technology."
+      }
+    ],
+    "numberOfChildren": 1,
+    "numberOfAdults": 2,
+    "numberOfRooms": 2,
+    "checkInDate": "2025-03-10",
+    "checkOutDate": "2025-03-12"
+  },
+  {
+    "hotelId": 6,
+    "hotelName": "Desert Mirage",
+    "starRating": 4,
+    "latitude": 34.0522,
+    "longitude": -116.2931,
+    "roomPrice": 220.0,
+    "roomType": "Desert Suite",
+    "cityName": "Palm Springs",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1612231393559-9414dc467ef7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 10,
+    "amenities": [
+      {
+        "id": 10,
+        "name": "Heated Pool",
+        "description": "A luxurious heated pool for year-round relaxation."
+      },
+      {
+        "id": 11,
+        "name": "Fire Pit",
+        "description": "Gather around the fire pit for a cozy evening."
+      }
+    ],
+    "numberOfChildren": 2,
+    "numberOfAdults": 4,
+    "numberOfRooms": 2,
+    "checkInDate": "2025-02-01",
+    "checkOutDate": "2025-02-03"
+  },
+  {
+    "hotelId": 7,
+    "hotelName": "Seaside Retreat",
+    "starRating": 3,
+    "latitude": 34.0522,
+    "longitude": -118.2437,
+    "roomPrice": 180.0,
+    "roomType": "Oceanfront Room",
+    "cityName": "Santa Monica",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1611095459865-47682ae3c41c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 15,
+    "amenities": [
+      {
+        "id": 12,
+        "name": "Beach Access",
+        "description": "Direct access to the beach from your room."
+      }
+    ],
+    "numberOfChildren": 2,
+    "numberOfAdults": 3,
+    "numberOfRooms": 1,
+    "checkInDate": "2025-03-05",
+    "checkOutDate": "2025-03-10"
+  },
+  {
+    "hotelId": 8,
+    "hotelName": "Historic Palace",
+    "starRating": 5,
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "roomPrice": 700.0,
+    "roomType": "Royal Suite",
+    "cityName": "Paris",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1573254485283-cde42629b8c5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 30,
+    "amenities": [
+      {
+        "id": 13,
+        "name": "Chandelier",
+        "description": "Luxurious crystal chandelier in every room."
+      },
+      {
+        "id": 14,
+        "name": "Jacuzzi",
+        "description": "Relax in a private jacuzzi."
+      }
+    ],
+    "numberOfChildren": 1,
+    "numberOfAdults": 3,
+    "numberOfRooms": 1,
+    "checkInDate": "2025-04-01",
+    "checkOutDate": "2025-04-05"
+  },
+  {
+    "hotelId": 9,
+    "hotelName": "Lakefront Retreat",
+    "starRating": 4,
+    "latitude": 47.6097,
+    "longitude": -122.3331,
+    "roomPrice": 300.0,
+    "roomType": "Lakeview Room",
+    "cityName": "Seattle",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1642455721185-ddb96935b001?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 20,
+    "amenities": [
+      {
+        "id": 15,
+        "name": "Fishing",
+        "description": "Enjoy fishing on the lake."
+      },
+      {
+        "id": 16,
+        "name": "Boating",
+        "description": "Rent a boat and enjoy the peaceful waters."
+      }
+    ],
+    "numberOfChildren": 1,
+    "numberOfAdults": 2,
+    "numberOfRooms": 2,
+    "checkInDate": "2025-03-15",
+    "checkOutDate": "2025-03-18"
+  },
+  {
+    "hotelId": 10,
+    "hotelName": "Savannah Manor",
+    "starRating": 4,
+    "latitude": 32.0836,
+    "longitude": -81.0998,
+    "roomPrice": 280.0,
+    "roomType": "Garden Room",
+    "cityName": "Savannah",
+    "roomPhotoUrl": "https://images.unsplash.com/photo-1654347880369-94921d520075?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "discount": 10,
+    "amenities": [
+      {
+        "id": 17,
+        "name": "Garden Views",
+        "description": "Enjoy beautiful views of the lush garden."
+      },
+      {
+        "id": 18,
+        "name": "Afternoon Tea",
+        "description": "Relax with an afternoon tea in the garden."
+      }
+    ],
+    "numberOfChildren": 2,
+    "numberOfAdults": 2,
+    "numberOfRooms": 1,
+    "checkInDate": "2025-04-10",
+    "checkOutDate": "2025-04-15"
+  }
+]

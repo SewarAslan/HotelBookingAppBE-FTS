@@ -1,0 +1,32 @@
+[
+  {
+    "reviewId": 1,
+    "customerName": "John Doe",
+    "rating": 4.5,
+    "description": "Great experience! The staff were friendly and the room was clean and comfortable. Will definitely return."
+  },
+  {
+    "reviewId": 2,
+    "customerName": "Jane Smith",
+    "rating": 5.0,
+    "description": "An amazing stay! The view from the suite was breathtaking and the amenities were top-notch."
+  },
+  {
+    "reviewId": 3,
+    "customerName": "Michael Johnson",
+    "rating": 3.0,
+    "description": "Good hotel but the check-in process was a bit slow. Overall, a decent stay."
+  },
+  {
+    "reviewId": 4,
+    "customerName": "Emily White",
+    "rating": 4.0,
+    "description": "The resort is beautiful, and the pool area is perfect. The only downside was the food quality."
+  },
+  {
+    "reviewId": 5,
+    "customerName": "Robert Brown",
+    "rating": 4.8,
+    "description": "Highly recommend! A wonderful stay with excellent service. The room was spacious and the beach was fantastic."
+  }
+]

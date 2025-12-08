@@ -1,0 +1,187 @@
+[
+  {
+    "roomId": 201,
+    "roomNumber": 101,
+    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiV-zO8KiAssWgdTgs5duPvyZJ-wFt_R9Kg&s",
+    "roomType": "Deluxe Suite",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 2,
+    "roomAmenities": [
+      {
+        "id": 1,
+        "name": "Free Wi-Fi",
+        "description": "High-speed internet access"
+      },
+      {
+        "id": 2,
+        "name": "Air Conditioning",
+        "description": "Individually controlled air conditioning"
+      }
+    ],
+    "price": 250.0,
+    "availability": true
+  },
+  {
+    "roomId": 202,
+    "roomNumber": 102,
+    "roomPhotoUrl": "https://nexthotelmelbourne.com/wp-content/uploads/2024/03/Next-Level-King-Room-scaled.jpg",
+    "roomType": "Standard Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "roomAmenities": [
+      {
+        "id": 3,
+        "name": "Flat-screen TV",
+        "description": "Includes international channels"
+      }
+    ],
+    "price": 150.0,
+    "availability": true
+  },
+  {
+    "roomId": 203,
+    "roomNumber": 103,
+    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkG6KPd3x99AsSBGew0gD8HRSXyHkBih_f8Q&s",
+    "roomType": "Executive Suite",
+    "capacityOfAdults": 3,
+    "capacityOfChildren": 2,
+    "roomAmenities": [
+      {
+        "id": 4,
+        "name": "Mini Bar",
+        "description": "Stocked with beverages and snacks"
+      },
+      {
+        "id": 5,
+        "name": "Balcony",
+        "description": "Private balcony with sea view"
+      }
+    ],
+    "price": 350.0,
+    "availability": false
+  },
+  {
+    "roomId": 204,
+    "roomNumber": 104,
+    "roomPhotoUrl": "https://www.landmarklondon.co.uk/wp-content/uploads/2024/06/The-Landmark-Suite-Interior1975-1-1800x1200.jpg",
+    "roomType": "Family Room",
+    "capacityOfAdults": 4,
+    "capacityOfChildren": 3,
+    "roomAmenities": [
+      {
+        "id": 6,
+        "name": "Kitchenette",
+        "description": "Includes a microwave and fridge"
+      }
+    ],
+    "price": 400.0,
+    "availability": true
+  },
+  {
+    "roomId": 205,
+    "roomNumber": 105,
+    "roomPhotoUrl": "https://www.trimcastlehotel.com/wp-content/uploads/2023/08/image-8-1.jpg",
+    "roomType": "Luxury Suite",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "roomAmenities": [
+      {
+        "id": 7,
+        "name": "Jacuzzi",
+        "description": "Private in-room Jacuzzi"
+      },
+      {
+        "id": 8,
+        "name": "Smart TV",
+        "description": "Netflix and streaming services included"
+      }
+    ],
+    "price": 500.0,
+    "availability": true
+  },
+  {
+    "roomId": 206,
+    "roomNumber": 106,
+    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmznNxD71EN6wZDef3BUdRubzn0cdXbxcDaw&s",
+    "roomType": "Presidential Suite",
+    "capacityOfAdults": 5,
+    "capacityOfChildren": 3,
+    "roomAmenities": [
+      {
+        "id": 9,
+        "name": "Private Pool",
+        "description": "Infinity pool with ocean view"
+      }
+    ],
+    "price": 1000.0,
+    "availability": false
+  },
+  {
+    "roomId": 207,
+    "roomNumber": 107,
+    "roomPhotoUrl": "https://example.com/room7.jpg",
+    "roomType": "Standard Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "roomAmenities": [
+      {
+        "id": 10,
+        "name": "Coffee Maker",
+        "description": "Complimentary coffee and tea"
+      }
+    ],
+    "price": 120.0,
+    "availability": true
+  },
+  {
+    "roomId": 208,
+    "roomNumber": 108,
+    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44wA5RBGS1RyoamFwrJV1WW5eyz_q-OXejQ&s",
+    "roomType": "Deluxe Room",
+    "capacityOfAdults": 3,
+    "capacityOfChildren": 1,
+    "roomAmenities": [
+      {
+        "id": 11,
+        "name": "24/7 Room Service",
+        "description": "Round-the-clock dining services"
+      }
+    ],
+    "price": 220.0,
+    "availability": false
+  },
+  {
+    "roomId": 209,
+    "roomNumber": 109,
+    "roomPhotoUrl": "https://fruitbasket.limepack.com/blog/wp-content/uploads/2024/04/pexels-pixabay-271618.jpg",
+    "roomType": "Twin Room",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "roomAmenities": [
+      {
+        "id": 12,
+        "name": "Laundry Service",
+        "description": "Same-day laundry and dry cleaning"
+      }
+    ],
+    "price": 180.0,
+    "availability": false
+  },
+  {
+    "roomId": 210,
+    "roomNumber": 110,
+    "roomPhotoUrl": "https://d18slle4wlf9ku.cloudfront.net/beaconhotelwdc.com-1932449155/cms/cache/v2/673c0e04c2e3e.webp/1920x1080/fit/80/63f62d62f1f4b3c3f5762770147fe495.webp",
+    "roomType": "Penthouse Suite",
+    "capacityOfAdults": 6,
+    "capacityOfChildren": 4,
+    "roomAmenities": [
+      {
+        "id": 13,
+        "name": "Private Chef",
+        "description": "Exclusive private dining experience"
+      }
+    ],
+    "price": 2000.0,
+    "availability": false
+  }
+]

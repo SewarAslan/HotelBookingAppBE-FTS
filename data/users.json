@@ -1,0 +1,4 @@
+[
+  { "id": 1, "userId": 1, "hotelId": 1, "status": "Confirmed" },
+  { "id": 2, "userId": 2, "hotelId": 2, "status": "Pending" }
+]

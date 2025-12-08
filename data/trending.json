@@ -1,0 +1,23 @@
+[
+  {
+    "cityId": 1,
+    "cityName": "Paris",
+    "countryName": "France",
+    "description": "The city of lights and love, known for the Eiffel Tower and rich culture.",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg"
+  },
+  {
+    "cityId": 2,
+    "cityName": "Tokyo",
+    "countryName": "Japan",
+    "description": "A bustling metropolis blending ultramodern and traditional Japanese culture.",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/1920px-Skyscrapers_of_Shinjuku_2009_January.jpg"
+  },
+  {
+    "cityId": 3,
+    "cityName": "New York",
+    "countryName": "USA",
+    "description": "The city that never sleeps, home to Times Square and Central Park.",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg/1280px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "hotelId": 101,
+    "originalRoomPrice": 200.0,
+    "discount": 20.0,
+    "finalPrice": 180.0,
+    "cityName": "Bali",
+    "hotelName": "Sunset Resort",
+    "hotelStarRating": 5,
+    "title": "Luxury Stay in the Heart of NYC",
+    "description": "A luxurious resort overlooking the ocean with top-notch amenities and breathtaking views.",
+    "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/45106790.jpg?k=f0021ec3dc42c14ae81c916f64cd68ca14c9e120082c504313fb18d408238073&o=&hp=1"
+  },
+  {
+    "hotelId": 202,
+    "originalRoomPrice": 150.0,
+    "discount": 10.0,
+    "finalPrice": 135.0,
+    "cityName": "Los Angeles",
+    "hotelName": "Sunset Boulevard Hotel",
+    "hotelStarRating": 4,
+    "title": "Exclusive Deal in LA",
+    "description": "Book now and save on this elegant and modern hotel near Hollywood attractions.",
+    "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/412091492.jpg?k=d0583ac4503a6ae97c0d8427d4c77e3610ecc4bf8dfb045b2194dbe5c1125736&o=&hp=1"
+  },
+  {
+    "hotelId": 303,
+    "originalRoomPrice": 120.0,
+    "discount": 15.0,
+    "finalPrice": 102.0,
+    "cityName": "Miami",
+    "hotelName": "Ocean View Resort",
+    "hotelStarRating": 3,
+    "title": "Beachfront Escape with a Special Discount",
+    "description": "Relax and unwind at this beachfront resort with stunning ocean views.",
+    "roomPhotoUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/526810786.jpg?k=bb3119410a0bd0abc6dca37be810655e55da040b338a4b11d7b87f2941406846&o="
+  }
+]
