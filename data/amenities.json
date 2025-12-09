@@ -2,77 +2,76 @@
   {
     "id": 1,
     "name": "Free Wi-Fi",
-    "description": "Stay connected with high-speed internet throughout the resort."
+    "description": "High-speed wireless internet available throughout the property."
   },
   {
     "id": 2,
     "name": "Swimming Pool",
-    "description": "An infinity pool with stunning ocean views."
+    "description": "Outdoor or indoor pool available for guests to relax and swim."
   },
   {
     "id": 3,
     "name": "Spa",
-    "description": "A full-service spa offering massages and beauty treatments."
+    "description": "Full spa services offering massage, body treatments, and relaxation rooms."
   },
   {
     "id": 4,
     "name": "Free Breakfast",
-    "description": "Start your day with a delicious continental breakfast."
+    "description": "Complimentary breakfast served daily, including local and international dishes."
   },
   {
     "id": 5,
     "name": "Hot Tub",
-    "description": "Relax and unwind in the outdoor hot tub."
+    "description": "Private or shared hot tub for relaxing warm water therapy."
   },
   {
     "id": 6,
     "name": "Sauna",
-    "description": "Recharge in the sauna after a day of outdoor activities."
+    "description": "Traditional or infrared sauna for detox and relaxation."
   },
   {
     "id": 7,
     "name": "Fitness Center",
-    "description": "A fully equipped fitness center to keep you active during your stay."
+    "description": "Gym equipped with cardio and strength machines for guests."
   },
   {
     "id": 8,
     "name": "24/7 Concierge",
-    "description": "Our concierge service is available around the clock to assist with your needs."
+    "description": "Professional concierge available anytime to assist with bookings and services."
   },
   {
     "id": 9,
     "name": "Restaurant",
-    "description": "Enjoy gourmet meals at our on-site restaurant with a city view."
+    "description": "On-site dining options with international and local cuisine."
   },
   {
     "id": 10,
     "name": "Private Beach",
-    "description": "Exclusive access to the resort's private beach."
+    "description": "Exclusive beach access available only for hotel guests."
   },
   {
     "id": 11,
     "name": "Water Sports",
-    "description": "Enjoy a variety of water sports including jet skiing, snorkeling, and diving."
+    "description": "Fun activities such as kayaking, diving, snorkeling, and jet skiing."
   },
   {
     "id": 12,
     "name": "Room Service",
-    "description": "24/7 room service available for your convenience."
+    "description": "Meals and drinks delivered directly to your room at any time."
   },
   {
     "id": 13,
     "name": "Rooftop Bar",
-    "description": "Sip cocktails while enjoying the stunning view of Tokyo's skyline."
+    "description": "Stylish rooftop bar offering city or ocean views and signature cocktails."
   },
   {
     "id": 14,
     "name": "Private Pool",
-    "description": "Each villa has a private pool with a view of the desert."
+    "description": "Exclusive pool attached to suites or villas for ultimate privacy."
   },
-
   {
     "id": 15,
     "name": "Air Conditioning",
-    "description": "Maintain the perfect room temperature with air conditioning."
+    "description": "Room equipped with adjustable cooling and heating for comfort."
   }
 ]

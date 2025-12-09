@@ -1,663 +1,245 @@
 [
   {
     "id": 1,
-    "hotelName": "Sunset Resort",
-    "location": "Bali, Indonesia",
-    "description": "A luxurious resort overlooking the ocean with top-notch amenities and breathtaking views.",
+    "name": "Sunset Resort",
+    "description": "A luxurious beachfront resort with panoramic ocean views, multiple pools, and world-class amenities.",
     "hotelType": "Resort",
     "starRating": 5,
+    "cityId": 1,
     "latitude": -8.3405,
     "longitude": 115.0915,
-    "rooms": [
-      {
-        "id": 101,
-        "name": "Ocean View Suite",
-        "type": "Suite",
-        "price": 500,
-        "available": true,
-        "maxOccupancy": 4
-      },
-      {
-        "id": 102,
-        "name": "Garden View Room",
-        "type": "Standard",
-        "price": 200,
-        "available": true,
-        "maxOccupancy": 2
-      }
+    "tags": ["featured", "ocean", "luxury", "romantic"],
+    "amenityIds": [1, 2, 3, 4, 10, 11],
+    "gallery": [
+      "https://bynder.onthebeach.co.uk/cdn-cgi/image/width=1400,quality=70,fit=cover,format=auto/m/144dc36bb7001a94/original/Sunset-Resort.jpg",
+      "https://bynder.onthebeach.co.uk/cdn-cgi/image/width=1400,quality=70,fit=cover,format=auto/m/6c4e1471d1a3e65a/original/Sunset-Resort.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEsKx8dCKBzrULedVSCo96JiZmSeF6zx1lg&s",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/86/5e/18/deluxe-poolview.jpg?w=700&h=-1&s=1"
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524208.jpg?k=5b680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=1",
-    "availableRooms": 10,
-    "cityId": 101,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Free Wi-Fi",
-        "description": "Stay connected with high-speed internet throughout the resort."
-      },
-      {
-        "id": 2,
-        "name": "Swimming Pool",
-        "description": "An infinity pool with stunning ocean views."
-      },
-      {
-        "id": 3,
-        "name": "Spa",
-        "description": "A full-service spa offering massages and beauty treatments."
-      }
-    ],
-    "name": "Sunset Resort"
+    "minPrice": 200,
+    "maxPrice": 500,
+    "discount": 20,
+    "finalPrice": 160
   },
+
   {
     "id": 2,
-    "hotelName": "Mountain Retreat",
-    "location": "Swiss Alps, Switzerland",
-    "description": "A serene mountain retreat offering panoramic views of the Alps and a perfect escape from the hustle of city life.",
-    "hotelType": "Boutique",
+    "name": "Snowy Mountain Retreat",
+    "description": "A peaceful mountain resort surrounded by snowy landscapes, ski slopes, and cozy fireplaces.",
+    "hotelType": "Resort",
     "starRating": 4,
-    "latitude": 46.8182,
-    "longitude": 8.2275,
-    "rooms": [
-      {
-        "id": 201,
-        "name": "Alpine View Room",
-        "type": "Deluxe",
-        "price": 350,
-        "available": true,
-        "maxOccupancy": 3
-      },
-      {
-        "id": 202,
-        "name": "Mountain Suite",
-        "type": "Suite",
-        "price": 550,
-        "available": false,
-        "maxOccupancy": 5
-      }
+    "cityId": 2,
+    "latitude": 46.8523,
+    "longitude": 8.6424,
+    "tags": ["featured", "cold", "nature", "ski"],
+    "amenityIds": [1, 2, 3, 4, 5, 6, 7],
+    "gallery": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/1b/fe/67/f4/photo1jpg.jpg",
+      "https://images.stockcake.com/public/3/e/b/3eb4b75a-1cb3-408d-87a3-b4cfdc510c85_large/snowy-mountain-resort-stockcake.jpg",
+      "https://images.stockcake.com/public/b/3/0/b309d7d0-e149-46b8-b823-ecd7d1ac3d99_large/cozy-mountain-retreat-stockcake.jpg"
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524209.jpg?k=6a680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=2",
-    "availableRooms": 5,
-    "cityId": 102,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Free Breakfast",
-        "description": "Start your day with a delicious continental breakfast."
-      },
-      {
-        "id": 2,
-        "name": "Hot Tub",
-        "description": "Relax and unwind in the outdoor hot tub."
-      },
-      {
-        "id": 3,
-        "name": "Sauna",
-        "description": "Recharge in the sauna after a day of outdoor activities."
-      }
-    ]
+    "minPrice": 150,
+    "maxPrice": 400,
+    "discount": 15,
+    "finalPrice": 128
   },
+
   {
     "id": 3,
-    "hotelName": "City Center Inn",
-    "location": "New York, USA",
-    "description": "A modern hotel in the heart of New York City with convenient access to major attractions, shopping, and restaurants.",
+    "name": "City Lux Hotel",
+    "description": "A modern city hotel located in the heart of downtown, offering premium services and skyline views.",
     "hotelType": "Hotel",
-    "starRating": 3,
+    "starRating": 5,
+    "cityId": 3,
     "latitude": 40.7128,
     "longitude": -74.006,
-    "rooms": [
-      {
-        "id": 301,
-        "name": "City View Room",
-        "type": "Standard",
-        "price": 250,
-        "available": true,
-        "maxOccupancy": 2
-      },
-      {
-        "id": 302,
-        "name": "Executive Suite",
-        "type": "Suite",
-        "price": 400,
-        "available": true,
-        "maxOccupancy": 4
-      }
+    "tags": ["featured", "city", "luxury"],
+    "amenityIds": [1, 2, 3, 4, 7, 8, 9, 12, 13],
+    "gallery": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwzolDS12LrkdK_xvA_n_Ls_nnY1fts953w&s",
+      "https://city-lux.tbilisi-hotels.com/data/Pics/OriginalPhoto/14968/1496831/1496831734/city-lux-hotel-tbilisi-pic-20.JPEG",
+      "https://city-lux.tbilisi-hotels.com/data/Pics/OriginalPhoto/14968/1496836/1496836903/city-lux-hotel-tbilisi-pic-11.JPEG"
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524210.jpg?k=7b680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=3",
-    "availableRooms": 15,
-    "cityId": 103,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Fitness Center",
-        "description": "A fully equipped fitness center to keep you active during your stay."
-      },
-      {
-        "id": 2,
-        "name": "24/7 Concierge",
-        "description": "Our concierge service is available around the clock to assist with your needs."
-      },
-      {
-        "id": 3,
-        "name": "Restaurant",
-        "description": "Enjoy gourmet meals at our on-site restaurant with a city view."
-      }
-    ]
+    "minPrice": 250,
+    "maxPrice": 550,
+    "discount": 25,
+    "finalPrice": 188
   },
   {
     "id": 4,
-    "hotelName": "Tropical Paradise",
-    "location": "Maldives",
-    "description": "An exclusive resort located on a private island, offering overwater bungalows and a perfect tropical getaway.",
+    "name": "Tropical Paradise Inn",
+    "description": "A beachside hotel surrounded by palm trees, offering crystal-clear waters and tropical vibes.",
     "hotelType": "Resort",
     "starRating": 5,
-    "latitude": -2.9737,
-    "longitude": 73.5367,
-    "rooms": [
-      {
-        "id": 401,
-        "name": "Overwater Bungalow",
-        "type": "Deluxe",
-        "price": 800,
-        "available": true,
-        "maxOccupancy": 2
-      },
-      {
-        "id": 402,
-        "name": "Beachfront Villa",
-        "type": "Villa",
-        "price": 1000,
-        "available": false,
-        "maxOccupancy": 4
-      }
+    "cityId": 4,
+    "latitude": 3.2028,
+    "longitude": 73.2207,
+    "tags": ["featured", "beach", "romantic", "honeymoon"],
+    "amenityIds": [1, 2, 3, 4, 10, 14],
+    "gallery": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7AeCXU6XPkaBXb5uE8vVXzbW4hqGdpw55SQ&s",
+      "https://images.myguide-cdn.com/md/common/large/5dae5fcb5618c-627255.jpg"
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524211.jpg?k=8c680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=4",
-    "availableRooms": 3,
-    "cityId": 104,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Private Beach",
-        "description": "Exclusive access to the resort's private beach."
-      },
-      {
-        "id": 2,
-        "name": "Water Sports",
-        "description": "Enjoy a variety of water sports including jet skiing, snorkeling, and diving."
-      },
-      {
-        "id": 3,
-        "name": "Sunset Dining",
-        "description": "Experience fine dining with a breathtaking sunset view."
-      }
-    ]
+    "minPrice": 300,
+    "maxPrice": 800,
+    "discount": 30,
+    "finalPrice": 210
   },
+
   {
     "id": 5,
-    "hotelName": "Urban Suites",
-    "location": "Tokyo, Japan",
-    "description": "A modern suite-style hotel offering luxury accommodations in the heart of Tokyo's vibrant city life.",
+    "name": "Tokyo Grand Tower",
+    "description": "Elegant rooms with stunning city skyline views located in central Tokyo, close to major attractions.",
     "hotelType": "Hotel",
-    "starRating": 4,
-    "latitude": 35.6762,
-    "longitude": 139.6503,
-    "rooms": [
-      {
-        "id": 501,
-        "name": "Tokyo Tower View Room",
-        "type": "Standard",
-        "price": 300,
-        "available": true,
-        "maxOccupancy": 2
-      },
-      {
-        "id": 502,
-        "name": "Shibuya Suite",
-        "type": "Suite",
-        "price": 600,
-        "available": true,
-        "maxOccupancy": 3
-      }
+    "starRating": 5,
+    "cityId": 5,
+    "latitude": 35.6895,
+    "longitude": 139.6917,
+    "tags": ["city", "luxury", "shopping"],
+    "amenityIds": [1, 2, 3, 4, 7, 8, 9, 12],
+    "gallery": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8pg9VkZy4hrz940lNW5NNhLS3O2sg1GW6w&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVWuFvo21AIoXiJ9G5krFAIj80sa49a3YxZg&s",
+      "https://q-xx.bstatic.com/xdata/images/hotel/max500/259060317.jpg?k=836164e31f6c7d398789fa65a8f7297e6f12891cd6cd6c2b02f97acc226e8dc6&o="
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524212.jpg?k=9d680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=5",
-    "availableRooms": 12,
-    "cityId": 105,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "On-Site Restaurant",
-        "description": "Enjoy a variety of Japanese and international dishes at our restaurant."
-      },
-      {
-        "id": 2,
-        "name": "Room Service",
-        "description": "24/7 room service available for your convenience."
-      },
-      {
-        "id": 3,
-        "name": "Rooftop Bar",
-        "description": "Sip cocktails while enjoying the stunning view of Tokyo's skyline."
-      }
-    ]
+    "minPrice": 280,
+    "maxPrice": 700
   },
   {
     "id": 6,
-    "hotelName": "Desert Oasis Resort",
-    "location": "Dubai, UAE",
-    "description": "A luxurious desert resort offering tranquility, premium service, and spectacular views of the sand dunes.",
+    "name": "Dubai Oasis Resort",
+    "description": "Luxurious desert-themed resort with private pools and fine dining experiences.",
     "hotelType": "Resort",
     "starRating": 5,
-    "latitude": 25.276987,
-    "longitude": 55.296249,
-    "rooms": [
-      {
-        "id": 601,
-        "name": "Dune View Suite",
-        "type": "Suite",
-        "price": 700,
-        "available": true,
-        "maxOccupancy": 4
-      },
-      {
-        "id": 602,
-        "name": "Desert Pool Villa",
-        "type": "Villa",
-        "price": 1000,
-        "available": false,
-        "maxOccupancy": 5
-      }
+    "cityId": 6,
+    "latitude": 25.2048,
+    "longitude": 55.2708,
+    "tags": ["featured", "luxury", "desert"],
+    "amenityIds": [1, 2, 3, 4, 7, 10, 14],
+    "gallery": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5klCYCpmpwPJVC4iLH6Ify31-eId-1KKwQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxbxFKGtUokYQGv-zqj874m6wn6vs-sXy0Vg&s",
+      "https://q-xx.bstatic.com/xdata/images/hotel/max500/25422330.jpg?k=cbd2202def6f830665432bef4767e26445179cb48e3f6d3463c0977c1f68f1f5&o="
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524213.jpg?k=ac680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=6",
-    "availableRooms": 8,
-    "cityId": 106,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Private Pool",
-        "description": "Each villa has a private pool with a view of the desert."
-      },
-      {
-        "id": 2,
-        "name": "Camel Ride",
-        "description": "Take a camel ride through the stunning dunes."
-      },
-      {
-        "id": 3,
-        "name": "Spa",
-        "description": "Indulge in a desert-themed spa experience."
-      }
-    ]
+    "minPrice": 350,
+    "maxPrice": 900,
+    "discount": 20,
+    "finalPrice": 280
   },
   {
     "id": 7,
-    "hotelName": "Coastal Breeze",
-    "location": "San Diego, USA",
-    "description": "A charming coastal hotel just a stone's throw away from the beach, offering a relaxing getaway with modern amenities.",
+    "name": "San Diego Bay Hotel",
+    "description": "Coastal stay near marinas and beaches with modern amenities and ocean views.",
     "hotelType": "Hotel",
     "starRating": 4,
+    "cityId": 7,
     "latitude": 32.7157,
     "longitude": -117.1611,
-    "rooms": [
-      {
-        "id": 701,
-        "name": "Ocean Breeze Room",
-        "type": "Standard",
-        "price": 350,
-        "available": true,
-        "maxOccupancy": 3
-      },
-      {
-        "id": 702,
-        "name": "Penthouse Suite",
-        "type": "Suite",
-        "price": 800,
-        "available": true,
-        "maxOccupancy": 5
-      }
+    "tags": ["beach", "family"],
+    "amenityIds": [1, 2, 9, 10],
+    "gallery": [
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/52744652.jpg?k=1716cb95ff8b6531544487fe1bc33cff9a375cb1c905ef76b312d4c3d995f809&o=",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/69/be/44/san-diego-mission-bay.jpg?w=900&h=500&s=1",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_6HiI3YgB8HdvNcILvhwoPQLA5wtM2LMDgA&s"
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524214.jpg?k=bd680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=7",
-    "availableRooms": 10,
-    "cityId": 107,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Beach Access",
-        "description": "Enjoy private access to the beach just steps away from your room."
-      },
-      {
-        "id": 2,
-        "name": "Beach Bar",
-        "description": "Relax at our beach bar with stunning sunset views."
-      },
-      {
-        "id": 3,
-        "name": "Outdoor Jacuzzi",
-        "description": "Soak in our outdoor jacuzzi with a view of the ocean."
-      }
-    ]
+    "minPrice": 190,
+    "maxPrice": 420
   },
   {
     "id": 8,
-    "hotelName": "Forest Lodge",
-    "location": "Whistler, Canada",
-    "description": "A cozy, rustic lodge nestled in the forest, offering a perfect retreat for nature lovers and winter sports enthusiasts.",
+    "name": "Whistler Snow Lodge",
+    "description": "Perfect winter getaway located near popular ski slopes and snow activities.",
     "hotelType": "Lodge",
-    "starRating": 3,
+    "starRating": 4,
+    "cityId": 8,
     "latitude": 50.1163,
     "longitude": -122.9574,
-    "rooms": [
-      {
-        "id": 801,
-        "name": "Mountain View Room",
-        "type": "Standard",
-        "price": 200,
-        "available": true,
-        "maxOccupancy": 2
-      },
-      {
-        "id": 802,
-        "name": "Forest Chalet",
-        "type": "Chalet",
-        "price": 500,
-        "available": true,
-        "maxOccupancy": 6
-      }
+    "tags": ["ski", "cold"],
+    "amenityIds": [1, 2, 3, 5, 6],
+    "gallery": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDstgrXqr1XCpsjhzsFvIZmgOd1A4vgFnF-Q&s",
+      "https://scene7.vailresorts.com/is/image/vailresorts/20190326_WB_Winton_008:Article-Image?resMode=sharp2&w=360&h=260&wid=382&fit=constrain,1&dpr=on,2.625",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1YmPOMcs3Cqsre_CkQ-Up4aXGlP6i7JekQg&s"
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524215.jpg?k=cd680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=8",
-    "availableRooms": 6,
-    "cityId": 108,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Ski Storage",
-        "description": "Convenient ski storage available for guests."
-      },
-      {
-        "id": 2,
-        "name": "Outdoor Fireplace",
-        "description": "Warm up by the outdoor fireplace in the evenings."
-      },
-      {
-        "id": 3,
-        "name": "Guided Tours",
-        "description": "Take a guided hike or snowshoe tour around the area."
-      }
-    ]
+    "minPrice": 160,
+    "maxPrice": 350
   },
   {
     "id": 9,
-    "hotelName": "Grand Plaza Hotel",
-    "location": "Paris, France",
-    "description": "A luxurious city-center hotel offering five-star accommodations and breathtaking views of the Eiffel Tower.",
+    "name": "Paris Royal Palace",
+    "description": "Historical building in the heart of Paris featuring luxury facilities and iconic architecture.",
     "hotelType": "Hotel",
     "starRating": 5,
+    "cityId": 9,
     "latitude": 48.8566,
     "longitude": 2.3522,
-    "rooms": [
-      {
-        "id": 901,
-        "name": "Eiffel Tower View Room",
-        "type": "Standard",
-        "price": 600,
-        "available": true,
-        "maxOccupancy": 2
-      },
-      {
-        "id": 902,
-        "name": "Presidential Suite",
-        "type": "Suite",
-        "price": 1500,
-        "available": true,
-        "maxOccupancy": 4
-      }
+    "tags": ["featured", "luxury", "romantic"],
+    "amenityIds": [1, 2, 3, 4, 7, 8, 9, 13],
+    "gallery": [
+      "https://cdn.sanity.io/images/nxpteyfv/goguides/1b9123393cb38151d11142c104f70300bcb988b9-1600x1066.jpg",
+      "https://www.franceguide.info/wp-content/uploads/sites/18/paris-palais-royal-hd.jpg",
+      "https://snippetsofparis.com/wp-content/uploads/2021/09/IMG_3436-palais-royal.jpg"
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524216.jpg?k=dd680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=9",
-    "availableRooms": 10,
-    "cityId": 109,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Eiffel Tower Views",
-        "description": "Enjoy a direct view of the Eiffel Tower from your room."
-      },
-      {
-        "id": 2,
-        "name": "Gourmet Restaurant",
-        "description": "Experience world-class French cuisine at our gourmet restaurant."
-      },
-      {
-        "id": 3,
-        "name": "Helicopter Tours",
-        "description": "Take a helicopter tour of Paris for a unique view of the city."
-      }
-    ]
+    "minPrice": 310,
+    "maxPrice": 780,
+    "discount": 25,
+    "finalPrice": 232
   },
   {
     "id": 10,
-    "hotelName": "Safari Lodge",
-    "location": "Kruger National Park, South Africa",
-    "description": "An exclusive lodge located within the Kruger National Park offering luxury safari experiences and wildlife sightings.",
-    "hotelType": "Lodge",
-    "starRating": 5,
-    "latitude": -24.0127,
-    "longitude": 31.5604,
-    "rooms": [
-      {
-        "id": 1001,
-        "name": "Safari View Room",
-        "type": "Standard",
-        "price": 700,
-        "available": true,
-        "maxOccupancy": 3
-      },
-      {
-        "id": 1002,
-        "name": "Luxury Safari Tent",
-        "type": "Tent",
-        "price": 1000,
-        "available": false,
-        "maxOccupancy": 4
-      }
+    "name": "Safari Eco Camp",
+    "description": "Unique eco-friendly stay inside the stunning Kruger National Park.",
+    "hotelType": "Camp",
+    "starRating": 4,
+    "cityId": 10,
+    "latitude": -23.9884,
+    "longitude": 31.5547,
+    "tags": ["featured", "wildlife", "nature"],
+    "amenityIds": [1, 2, 9, 11],
+    "gallery": [
+      "https://www.ecocamp.travel/hs-fs/hubfs/EcoCamp_2019/Images/home_hero.jpg?width=1920&name=home_hero.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjShdfbeYn14pFMS0Sis-j_5_0QBNf5lcxPg&s",
+      "https://www.ecocamp.travel/hs-fs/hubfs/P%C3%A1ginas/Landing/Suite%20Dome%20EcoCamp%20Patagonia%201920x1281-compressed.webp?width=800&height=534&name=Suite%20Dome%20EcoCamp%20Patagonia%201920x1281-compressed.webp",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/449903666.jpg?k=6250c1ceb4a684f9af6e7f9d8e90ad9ad8ae4f5550c66d0dd03518745234d020&o="
     ],
-    "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/457524217.jpg?k=ed680e7009b3fcdec99ae79d91decd52bcb7bb9ac0de30d1a5925f27834fe6bb&o=&hp=10",
-    "availableRooms": 5,
-    "cityId": 110,
-    "amenities": [
-      {
-        "id": 1,
-        "name": "Safari Drives",
-        "description": "Join our expert guides for daily safari drives to view wildlife."
-      },
-      {
-        "id": 2,
-        "name": "Outdoor Dining",
-        "description": "Enjoy outdoor dining with a view of the African savannah."
-      },
-      {
-        "id": 3,
-        "name": "Game Walks",
-        "description": "Take part in guided walking safaris for a more intimate experience."
-      }
-    ]
-  },
-  {
-    "id": 30,
-    "name": "Ocean View Hotel",
-    "description": "A luxurious beachfront hotel with breathtaking ocean views.",
-    "hotelType": "Resort",
-    "starRating": 5,
-    "latitude": 34.0522,
-    "longitude": -118.2437
+    "minPrice": 170,
+    "maxPrice": 380,
+    "discount": 20,
+    "finalPrice": 136
   },
   {
     "id": 11,
-    "name": "Mountain Retreat",
-    "description": "A peaceful getaway nestled in the mountains, perfect for relaxation.",
-    "hotelType": "Lodge",
+    "name": "London Central Suits",
+    "description": "Premium serviced apartments located in busy London city center.",
+    "hotelType": "Apartment",
     "starRating": 4,
-    "latitude": 39.7392,
-    "longitude": -104.9903
+    "cityId": 11,
+    "latitude": 51.5074,
+    "longitude": -0.1278,
+    "tags": ["city", "business"],
+    "amenityIds": [1, 2, 7, 8, 12],
+    "gallery": [
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/653015639.jpg?k=0dc249380f4266c91f76312b267b62b83e497b225bb050ecc5118fdd51647a7e&o="
+    ],
+    "minPrice": 200,
+    "maxPrice": 450
   },
   {
     "id": 12,
-    "name": "City Plaza Hotel",
-    "description": "A modern hotel located in the heart of the city with easy access to all attractions.",
-    "hotelType": "Hotel",
-    "starRating": 3,
-    "latitude": 40.7128,
-    "longitude": -74.006
-  },
-  {
-    "id": 13,
-    "name": "Forest Sanctuary",
-    "description": "A retreat surrounded by lush forests offering a tranquil escape.",
-    "hotelType": "Resort",
-    "starRating": 4,
-    "latitude": 37.7749,
-    "longitude": -122.4194
-  },
-  {
-    "id": 14,
-    "name": "Desert Oasis",
-    "description": "A beautiful resort in the desert with luxurious amenities.",
-    "hotelType": "Resort",
-    "starRating": 5,
-    "latitude": 36.1699,
-    "longitude": -115.1398
-  },
-  {
-    "id": 15,
-    "name": "Coastal Escape",
-    "description": "A relaxing coastal retreat with scenic views and comfortable rooms.",
-    "hotelType": "Hotel",
-    "starRating": 3,
-    "latitude": 26.7153,
-    "longitude": -80.0534
-  },
-  {
-    "id": 16,
-    "name": "Luxury Skyline Hotel",
-    "description": "A high-rise hotel offering stunning views of the city skyline.",
-    "hotelType": "Hotel",
-    "starRating": 5,
-    "latitude": 51.5074,
-    "longitude": -0.1278
-  },
-  {
-    "id": 17,
-    "name": "Riverside Resort",
-    "description": "A resort situated along a scenic river offering a peaceful retreat.",
-    "hotelType": "Resort",
-    "starRating": 4,
-    "latitude": 48.8566,
-    "longitude": 2.3522
-  },
-  {
-    "id": 18,
-    "name": "Skyview Heights",
-    "description": "A modern high-rise offering panoramic views of the city below.",
+    "name": "Rome Ancient Plaza",
+    "description": "Charming hotel surrounded by historical sites and ancient monuments.",
     "hotelType": "Hotel",
     "starRating": 4,
-    "latitude": 40.7306,
-    "longitude": -73.9352
-  },
-  {
-    "id": 19,
-    "name": "Island Paradise",
-    "description": "A tropical island resort with crystal-clear waters and white sandy beaches.",
-    "hotelType": "Resort",
-    "starRating": 5,
-    "latitude": 21.3069,
-    "longitude": -157.8583
-  },
-  {
-    "id": 20,
-    "name": "Historic Inn",
-    "description": "A charming inn with a rich history, offering a cozy atmosphere and antique decor.",
-    "hotelType": "Inn",
-    "starRating": 3,
-    "latitude": 42.3601,
-    "longitude": -71.0589
-  },
-  {
-    "id": 21,
-    "name": "Seaside View Lodge",
-    "description": "A cozy lodge offering beautiful views of the ocean.",
-    "hotelType": "Lodge",
-    "starRating": 4,
-    "latitude": 36.7783,
-    "longitude": -119.4179
-  },
-  {
-    "id": 22,
-    "name": "Alpine Adventure Hotel",
-    "description": "A perfect stay for adventure enthusiasts near the mountains and ski resorts.",
-    "hotelType": "Hotel",
-    "starRating": 4,
-    "latitude": 44.428,
-    "longitude": -110.5885
-  },
-  {
-    "id": 23,
-    "name": "Garden View Resort",
-    "description": "A peaceful resort surrounded by beautifully manicured gardens.",
-    "hotelType": "Resort",
-    "starRating": 3,
-    "latitude": 33.749,
-    "longitude": -84.388
-  },
-  {
-    "id": 24,
-    "name": "City Lights Hotel",
-    "description": "A hotel located in the downtown area, ideal for business and leisure stays.",
-    "hotelType": "Hotel",
-    "starRating": 3,
-    "latitude": 34.0522,
-    "longitude": -118.2437
-  },
-  {
-    "id": 25,
-    "name": "Lakeside Retreat",
-    "description": "A serene lakeside retreat offering outdoor activities and a peaceful atmosphere.",
-    "hotelType": "Resort",
-    "starRating": 4,
-    "latitude": 41.8781,
-    "longitude": -87.6298
-  },
-  {
-    "id": 26,
-    "name": "Palace Hotel",
-    "description": "A luxurious palace offering world-class service and opulent accommodations.",
-    "hotelType": "Hotel",
-    "starRating": 5,
-    "latitude": 48.8566,
-    "longitude": 2.3522
-  },
-  {
-    "id": 27,
-    "name": "City Garden Inn",
-    "description": "A quaint inn with a beautiful garden, perfect for a relaxing getaway.",
-    "hotelType": "Inn",
-    "starRating": 3,
-    "latitude": 41.3037,
-    "longitude": -72.928
-  },
-  {
-    "id": 28,
-    "name": "Tropical Haven Resort",
-    "description": "A tropical resort surrounded by lush greenery and beautiful beaches.",
-    "hotelType": "Resort",
-    "starRating": 5,
-    "latitude": 25.7617,
-    "longitude": -80.1918
-  },
-  {
-    "id": 29,
-    "name": "Desert Mirage",
-    "description": "A luxury resort with stunning views of the desert landscape.",
-    "hotelType": "Resort",
-    "starRating": 4,
-    "latitude": 33.4484,
-    "longitude": -112.074
+    "cityId": 12,
+    "latitude": 41.9028,
+    "longitude": 12.4964,
+    "tags": ["romantic", "historic"],
+    "amenityIds": [1, 2, 9],
+    "gallery": [
+      "https://mlegdx5tedle.i.optimole.com/baCgufs.LVHB~676cd/w:382/h:424/q:auto/https://colosseum.info/wp-content/uploads/2021/01/ROMAN-FORUM-RECONSTRUCT-2.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYL6UYpCEVAPanbTtLldLecZxKGqThFOqkOw&s"
+    ],
+    "minPrice": 170,
+    "maxPrice": 390
   }
 ]

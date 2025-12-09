@@ -97,12 +97,66 @@ app.post("/api/auth/authenticate", (req, res) => {
   }
 });
 
-app.get("/api/home/users/2/recent-hotels", (req, res) => {
-  res.json(getJsonData("recentHotels.json"));
+app.get("/api/users/:userId/recent-visited/details", (req, res) => {
+  const { userId } = req.params;
+
+  const recent = getJsonData("recentVisited.json");
+  const hotels = getJsonData("hotels.json");
+  const cities = getJsonData("cities.json");
+
+  const entry = recent.find((u) => u.userId == userId);
+
+  if (!entry) return res.json([]);
+
+  const data = entry.visits
+    .map((v) => {
+      const hotel = hotels.find((h) => h.id === v.hotelId);
+      if (!hotel) return null;
+
+      const city = cities.find((c) => c.id === hotel.cityId);
+
+      return {
+        hotelName: hotel.name,
+        starRating: hotel.starRating,
+        visitDate: v.visitDate,
+        cityName: city?.name ?? "",
+        thumbnailUrl: hotel.gallery?.[0] ?? null,
+        priceLowerBound: hotel.minPrice,
+        priceUpperBound: hotel.maxPrice,
+      };
+    })
+    .filter(Boolean);
+
+  res.json(data);
 });
 
 app.get("/api/home/featured-deals", (req, res) => {
   res.json(getJsonData("featuredDeals.json"));
+});
+function getCityName(cityId) {
+  const cities = getJsonData("cities.json");
+  const city = cities.find((c) => c.id === cityId);
+  return city?.name || "Unknown";
+}
+
+app.get("/api/hotels/featured", (req, res) => {
+  const hotels = getJsonData("hotels.json");
+  const featured = hotels.filter((h) => h.tags?.includes("featured"));
+
+  const mapped = featured.map((h) => ({
+    hotelId: h.id,
+    hotelName: h.name,
+    cityName: getCityName(h.cityId),
+    hotelStarRating: h.starRating,
+    originalRoomPrice: h.minPrice,
+    finalPrice: h.maxPrice,
+    discount: Math.round((1 - h.minPrice / h.maxPrice) * 100),
+    roomPhotoUrl: h.gallery?.[0] || null,
+    title: h.name,
+    description: h.description,
+  }));
+
+  res.json(mapped);
 });
 
 app.get("/api/home/destinations/trending", (req, res) => {
@@ -134,17 +188,131 @@ app.get("/api/hotels", (req, res) => {
   const paginatedHotels = filteredHotels.slice(startIndex, endIndex);
   res.json(paginatedHotels);
 });
+app.get("/api/hotels/search", (req, res) => {
+  const hotels = getJsonData("hotels.json");
+  const rooms = getJsonData("rooms.json");
+  const amenities = getJsonData("amenities.json");
+
+  const results = hotels.map((h) => {
+    const roomsForHotel = rooms.filter((r) => r.hotelId === h.id);
+    const minRoom = roomsForHotel.sort((a, b) => a.price - b.price)[0];
+    const fullAmenities =
+      h.amenityIds?.map((id) => amenities.find((a) => a.id === id)) || [];
+
+    return {
+      hotelId: h.id,
+      hotelName: h.name,
+      cityName: getCityName(h.cityId),
+      roomPhotoUrl: minRoom?.roomPhotoUrl || h.gallery?.[0] || null,
+      starRating: h.starRating,
+      roomType: minRoom?.roomType || null,
+      roomPrice: minRoom?.price || h.minPrice,
+      discount: minRoom?.discount || null,
+      description: h.description,
+      roomCapacityAdults: roomsForHotel?.reduce(
+        (max, r) => Math.max(max, r.capacityOfAdults),
+        0
+      ),
+      roomCapacityChildren: roomsForHotel?.reduce(
+        (max, r) => Math.max(max, r.capacityOfChildren),
+        0
+      ),
+      availableRooms: roomsForHotel.filter((r) => r.availability).length,
+      amenities: fullAmenities,
+    };
+  });
+
+  res.json(results);
+});
 
 app.get("/api/hotels/:id/gallery", (req, res) => {
-  res.json(getJsonData("gallery.json"));
+  const hotels = getJsonData("hotels.json");
+  const id = Number(req.params.id);
+
+  const hotel = hotels.find((h) => h.id === id);
+
+  if (!hotel) {
+    return res.status(404).json({ message: "Hotel not found" });
+  }
+
+  res.json(hotel.gallery ?? []);
 });
 
 app.get("/api/hotels/:id", (req, res) => {
-  res.json(getJsonData("hotelId.json"));
+  const hotels = getJsonData("hotels.json");
+  const rooms = getJsonData("rooms.json");
+  const amenities = getJsonData("amenities.json");
+
+  const id = Number(req.params.id);
+
+  const hotel = hotels.find((h) => h.id === id);
+
+  if (!hotel) {
+    return res.status(404).json({ message: "Hotel not found" });
+  }
+
+  const roomsForHotel = rooms
+    .filter((r) => r.hotelId === id)
+    .map((r) => ({
+      id: r.id,
+      name: r.roomName || r.roomType,
+      type: r.roomType,
+      price: r.price,
+      available: true,
+      maxOccupancy: r.maxOccupancy || 2,
+    }));
+
+  const hotelAmenities = (hotel.amenityIds || [])
+    .map((aid) => amenities.find((a) => a.id === aid))
+    .filter(Boolean)
+    .map((a) => ({
+      id: a.id,
+      name: a.name,
+      description: a.description || "",
+    }));
+  const response = {
+    id: hotel.id,
+    hotelName: hotel.name,
+    location: getCityName(hotel.cityId),
+    description: hotel.description,
+    hotelType: hotel.hotelType,
+    starRating: hotel.starRating,
+    latitude: hotel.latitude,
+    longitude: hotel.longitude,
+    rooms: roomsForHotel,
+    imageUrl: hotel.gallery?.[0] || null,
+    availableRooms: roomsForHotel.length,
+    cityId: hotel.cityId,
+    amenities: hotelAmenities,
+  };
+
+  res.json(response);
 });
 
 app.get("/api/hotels/:id/available-rooms", (req, res) => {
   res.json(getJsonData("availableRooms.json"));
+});
+app.get("/api/hotels/:id/amenities", (req, res) => {
+  const hotelId = Number(req.params.id);
+
+  const hotels = getJsonData("hotels.json");
+  const amenities = getJsonData("amenities.json");
+
+  const hotel = hotels.find((h) => h.id === hotelId);
+  if (!hotel) {
+    return res.status(404).json({ message: "Hotel not found" });
+  }
+
+  const hotelAmenities = (hotel.amenityIds || [])
+    .map((amenityId) => amenities.find((a) => a.id === amenityId))
+    .filter(Boolean)
+    .map((a) => ({
+      id: a.id,
+      name: a.name,
+      description: a.description || "",
+    }));
+
+  res.json(hotelAmenities);
 });
 
 app.get("/api/hotels/:id/reviews", (req, res) => {
@@ -153,12 +321,25 @@ app.get("/api/hotels/:id/reviews", (req, res) => {
 
 app.post("/api/bookings", (req, res) => {
   const bookings = getJsonData("bookings.json");
+  const rooms = getJsonData("rooms.json");
+
+  const { hotelId, roomId, userId, checkInDate, checkOutDate } = req.body;
+
+  if (!hotelId || !roomId || !userId) {
+    return res.status(400).json({ message: "Missing booking data" });
+  }
+
+  const room = rooms.find((r) => r.roomId === roomId);
 
   const newBooking = {
     bookingId: bookings.length + 1,
-    hotelId: req.body.hotelId,
-    roomId: req.body.roomId,
-    userId: req.body.userId,
+    hotelId,
+    roomId,
+    userId,
+    checkInDate,
+    checkOutDate,
+    price: room?.price ?? null,
+    status: "Confirmed",
     bookingDate: new Date().toISOString(),
   };
 
@@ -170,18 +351,31 @@ app.post("/api/bookings", (req, res) => {
     "utf8"
   );
 
-  res.json(newBooking);
+  res.setHeader("Content-Type", "application/json");
+  res.status(200).json({ bookingId: newBooking.bookingId });
 });
 
 app.get("/api/bookings/:id", (req, res) => {
   const bookings = getJsonData("bookings.json");
-  const booking = bookings.find((b) => b.bookingId == Number(req.params.id));
+  const hotels = getJsonData("hotels.json");
+  const rooms = getJsonData("rooms.json");
+
+  const bookingId = Number(req.params.id);
+  const booking = bookings.find((b) => b.bookingId === bookingId);
 
   if (!booking) {
     return res.status(404).json({ message: "Booking not found" });
   }
 
-  res.json(booking);
+  const hotel = hotels.find((h) => h.id === booking.hotelId);
+  const room = rooms.find((r) => r.roomId === booking.roomId);
+
+  res.json({
+    bookingId: booking.bookingId,
+    ...booking,
+    hotel,
+    room,
+  });
 });
 
 app.get("/api/home/search", async (req, res) => {
@@ -225,7 +419,78 @@ app.get("/api/cities", (req, res) => {
 });
 
 app.get("/api/hotels/:id/rooms", (req, res) => {
-  res.json(getJsonData("rooms.json"));
+  const hotelId = Number(req.params.id);
+
+  const rooms = getJsonData("rooms.json");
+  const amenities = getJsonData("amenities.json");
+
+  const roomPhotos = {
+    Deluxe:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bb8gYBLbLNVUbogsej1zOJ4WC57dblcPIg&s",
+    Suite:
+      "https://143587181.fs1.hubspotusercontent-eu1.net/hub/143587181/hubfs/The%20Best%20Hotel%20Suites%20in%20London-jpg-1.jpeg?width=1600&height=1067&name=The%20Best%20Hotel%20Suites%20in%20London-jpg-1.jpeg",
+    Executive:
+      "https://cdn.marriottnetwork.com/uploads/sites/24/2021/02/canyon-suites-scottsdale-luxury-collection-king-bedroom.jpg",
+    Standard:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6e5SHjo_JS7ZSSB1YzYUADiuaq1tN-4pBkQ&s",
+    Villa:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ3j1Zua-X9NSrKSjMtFRDavgHo9QEkRyCFQ&s",
+    Chalet:
+      "https://img.archiexpo.com/images_ae/projects/images-g/hotelroom-austrian-alps-77007-16434463.jpg",
+    Bungalow:
+      "https://www.hotelkiaora.com/wp-content/uploads/2016/11/beach-deluxe-chambre-1024x683.jpg",
+    Tent: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGkELW2jQXCLueeWLYj2PEbxhA0fcgieBJw&s",
+    default:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHq75UQD1RLfpWyWQll5bDchyycAuMNaq3kA&s",
+  };
+
+  const hotelRooms = rooms
+    .filter((r) => r.hotelId === hotelId)
+    .map((room) => ({
+      ...room,
+      roomPhotoUrl: roomPhotos[room.roomType] || roomPhotos.default,
+      roomAmenities:
+        room.amenityIds?.map((id) => amenities.find((a) => a.id === id)) || [],
+    }));
+
+  res.json(hotelRooms);
+});
+app.get("/api/hotels/:id/rooms/available", (req, res) => {
+  const hotelId = Number(req.params.id);
+
+  const rooms = getJsonData("rooms.json");
+  const amenities = getJsonData("amenities.json");
+
+  const roomPhotos = {
+    Deluxe:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bb8gYBLbLNVUbogsej1zOJ4WC57dblcPIg&s",
+    Suite:
+      "https://143587181.fs1.hubspotusercontent-eu1.net/hub/143587181/hubfs/The%20Best%20Hotel%20Suites%20in%20London-jpg-1.jpeg?width=1600&height=1067&name=The%20Best%20Hotel%20Suites%20in%20London-jpg-1.jpeg",
+    Executive:
+      "https://cdn.marriottnetwork.com/uploads/sites/24/2021/02/canyon-suites-scottsdale-luxury-collection-king-bedroom.jpg",
+    Standard:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6e5SHjo_JS7ZSSB1YzYUADiuaq1tN-4pBkQ&s",
+    Villa:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ3j1Zua-X9NSrKSjMtFRDavgHo9QEkRyCFQ&s",
+    Chalet:
+      "https://img.archiexpo.com/images_ae/projects/images-g/hotelroom-austrian-alps-77007-16434463.jpg",
+    Bungalow:
+      "https://www.hotelkiaora.com/wp-content/uploads/2016/11/beach-deluxe-chambre-1024x683.jpg",
+    Tent: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGkELW2jQXCLueeWLYj2PEbxhA0fcgieBJw&s",
+    default:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHq75UQD1RLfpWyWQll5bDchyycAuMNaq3kA&s",
+  };
+
+  const availableRooms = rooms
+    .filter((r) => r.hotelId === hotelId && r.availability)
+    .map((room) => ({
+      ...room,
+      roomPhotoUrl: roomPhotos[room.roomType] || roomPhotos.default,
+      roomAmenities:
+        room.amenityIds?.map((id) => amenities.find((a) => a.id === id)) || [],
+    }));
+
+  res.json(availableRooms);
 });
 
 app.put("/api/cities/:id", (req, res) => {
@@ -267,6 +532,16 @@ app.post("/api/hotels", (req, res) => {
   writeJsonData("hotels.json", {
     id: data[data.length - 1].id + 1,
     ...req.body,
+  });
+  app.get("/api/cities/:id", (req, res) => {
+    const cities = getJsonData("cities.json");
+    const city = cities.find((c) => c.id == Number(req.params.id));
+
+    if (!city) {
+      return res.status(404).json({ message: "City not found" });
+    }
+
+    res.json(city);
   });
 
   res.json(getJsonData("hotels.json"));

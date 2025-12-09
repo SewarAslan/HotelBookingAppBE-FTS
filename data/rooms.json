@@ -1,187 +1,221 @@
 [
   {
-    "roomId": 201,
+    "roomId": 101,
+    "hotelId": 1,
     "roomNumber": 101,
-    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiV-zO8KiAssWgdTgs5duPvyZJ-wFt_R9Kg&s",
-    "roomType": "Deluxe Suite",
+    "roomType": "Deluxe",
+    "price": 200,
     "capacityOfAdults": 2,
-    "capacityOfChildren": 2,
-    "roomAmenities": [
-      {
-        "id": 1,
-        "name": "Free Wi-Fi",
-        "description": "High-speed internet access"
-      },
-      {
-        "id": 2,
-        "name": "Air Conditioning",
-        "description": "Individually controlled air conditioning"
-      }
-    ],
-    "price": 250.0,
+    "capacityOfChildren": 1,
+    "amenityIds": [1, 2, 10],
+    "availability": true
+  },
+  {
+    "roomId": 102,
+    "hotelId": 1,
+    "roomNumber": 102,
+    "roomType": "Suite",
+    "price": 350,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 2, 3, 10, 14],
+    "availability": true
+  },
+  {
+    "roomId": 103,
+    "hotelId": 1,
+    "roomNumber": 301,
+    "roomType": "Executive",
+    "price": 300,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 2, 7, 8, 9],
+    "availability": false
+  },
+  {
+    "roomId": 201,
+    "hotelId": 2,
+    "roomNumber": 201,
+    "roomType": "Standard",
+    "price": 180,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 5, 6],
     "availability": true
   },
   {
     "roomId": 202,
-    "roomNumber": 102,
-    "roomPhotoUrl": "https://nexthotelmelbourne.com/wp-content/uploads/2024/03/Next-Level-King-Room-scaled.jpg",
-    "roomType": "Standard Room",
-    "capacityOfAdults": 2,
-    "capacityOfChildren": 1,
-    "roomAmenities": [
-      {
-        "id": 3,
-        "name": "Flat-screen TV",
-        "description": "Includes international channels"
-      }
-    ],
-    "price": 150.0,
-    "availability": true
-  },
-  {
-    "roomId": 203,
-    "roomNumber": 103,
-    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkG6KPd3x99AsSBGew0gD8HRSXyHkBih_f8Q&s",
-    "roomType": "Executive Suite",
-    "capacityOfAdults": 3,
-    "capacityOfChildren": 2,
-    "roomAmenities": [
-      {
-        "id": 4,
-        "name": "Mini Bar",
-        "description": "Stocked with beverages and snacks"
-      },
-      {
-        "id": 5,
-        "name": "Balcony",
-        "description": "Private balcony with sea view"
-      }
-    ],
-    "price": 350.0,
-    "availability": false
-  },
-  {
-    "roomId": 204,
-    "roomNumber": 104,
-    "roomPhotoUrl": "https://www.landmarklondon.co.uk/wp-content/uploads/2024/06/The-Landmark-Suite-Interior1975-1-1800x1200.jpg",
-    "roomType": "Family Room",
+    "hotelId": 2,
+    "roomNumber": 202,
+    "roomType": "Chalet",
+    "price": 320,
     "capacityOfAdults": 4,
-    "capacityOfChildren": 3,
-    "roomAmenities": [
-      {
-        "id": 6,
-        "name": "Kitchenette",
-        "description": "Includes a microwave and fridge"
-      }
-    ],
-    "price": 400.0,
+    "capacityOfChildren": 2,
+    "amenityIds": [1, 2, 3, 5, 6, 7],
     "availability": true
   },
+
   {
-    "roomId": 205,
-    "roomNumber": 105,
-    "roomPhotoUrl": "https://www.trimcastlehotel.com/wp-content/uploads/2023/08/image-8-1.jpg",
-    "roomType": "Luxury Suite",
-    "capacityOfAdults": 2,
-    "capacityOfChildren": 1,
-    "roomAmenities": [
-      {
-        "id": 7,
-        "name": "Jacuzzi",
-        "description": "Private in-room Jacuzzi"
-      },
-      {
-        "id": 8,
-        "name": "Smart TV",
-        "description": "Netflix and streaming services included"
-      }
-    ],
-    "price": 500.0,
-    "availability": true
-  },
-  {
-    "roomId": 206,
-    "roomNumber": 106,
-    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmznNxD71EN6wZDef3BUdRubzn0cdXbxcDaw&s",
-    "roomType": "Presidential Suite",
-    "capacityOfAdults": 5,
-    "capacityOfChildren": 3,
-    "roomAmenities": [
-      {
-        "id": 9,
-        "name": "Private Pool",
-        "description": "Infinity pool with ocean view"
-      }
-    ],
-    "price": 1000.0,
-    "availability": false
-  },
-  {
-    "roomId": 207,
-    "roomNumber": 107,
-    "roomPhotoUrl": "https://example.com/room7.jpg",
-    "roomType": "Standard Room",
+    "roomId": 301,
+    "hotelId": 3,
+    "roomNumber": 301,
+    "roomType": "Executive",
+    "price": 300,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "roomAmenities": [
-      {
-        "id": 10,
-        "name": "Coffee Maker",
-        "description": "Complimentary coffee and tea"
-      }
-    ],
-    "price": 120.0,
+    "amenityIds": [1, 2, 7, 8, 9],
     "availability": true
   },
   {
-    "roomId": 208,
-    "roomNumber": 108,
-    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44wA5RBGS1RyoamFwrJV1WW5eyz_q-OXejQ&s",
-    "roomType": "Deluxe Room",
-    "capacityOfAdults": 3,
-    "capacityOfChildren": 1,
-    "roomAmenities": [
-      {
-        "id": 11,
-        "name": "24/7 Room Service",
-        "description": "Round-the-clock dining services"
-      }
-    ],
-    "price": 220.0,
-    "availability": false
-  },
-  {
-    "roomId": 209,
-    "roomNumber": 109,
-    "roomPhotoUrl": "https://fruitbasket.limepack.com/blog/wp-content/uploads/2024/04/pexels-pixabay-271618.jpg",
-    "roomType": "Twin Room",
+    "roomId": 302,
+    "hotelId": 3,
+    "roomNumber": 302,
+    "roomType": "Suite",
+    "price": 500,
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
-    "roomAmenities": [
-      {
-        "id": 12,
-        "name": "Laundry Service",
-        "description": "Same-day laundry and dry cleaning"
-      }
-    ],
-    "price": 180.0,
-    "availability": false
+    "amenityIds": [1, 2, 3, 4, 8, 9, 12],
+    "availability": true
+  },
+
+  {
+    "roomId": 401,
+    "hotelId": 4,
+    "roomNumber": 401,
+    "roomType": "Villa",
+    "price": 450,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenityIds": [1, 2, 10, 14],
+    "availability": true
   },
   {
-    "roomId": 210,
-    "roomNumber": 110,
-    "roomPhotoUrl": "https://d18slle4wlf9ku.cloudfront.net/beaconhotelwdc.com-1932449155/cms/cache/v2/673c0e04c2e3e.webp/1920x1080/fit/80/63f62d62f1f4b3c3f5762770147fe495.webp",
-    "roomType": "Penthouse Suite",
-    "capacityOfAdults": 6,
-    "capacityOfChildren": 4,
-    "roomAmenities": [
-      {
-        "id": 13,
-        "name": "Private Chef",
-        "description": "Exclusive private dining experience"
-      }
-    ],
-    "price": 2000.0,
+    "roomId": 402,
+    "hotelId": 4,
+    "roomNumber": 402,
+    "roomType": "Bungalow",
+    "price": 700,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 2, 3, 10, 14],
     "availability": false
+  },
+
+  {
+    "roomId": 501,
+    "hotelId": 5,
+    "roomNumber": 501,
+    "roomType": "Deluxe",
+    "price": 280,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 2, 3],
+    "availability": true
+  },
+  {
+    "roomId": 502,
+    "hotelId": 5,
+    "roomNumber": 502,
+    "roomType": "Suite",
+    "price": 550,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 1,
+    "amenityIds": [1, 2, 3, 4],
+    "availability": true
+  },
+
+  {
+    "roomId": 601,
+    "hotelId": 6,
+    "roomNumber": 601,
+    "roomType": "Suite",
+    "price": 380,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 2, 7, 10],
+    "availability": true
+  },
+  {
+    "roomId": 602,
+    "hotelId": 6,
+    "roomNumber": 602,
+    "roomType": "Villa",
+    "price": 800,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 2,
+    "amenityIds": [1, 2, 3, 7, 14],
+    "availability": false
+  },
+
+  {
+    "roomId": 701,
+    "hotelId": 7,
+    "roomNumber": 701,
+    "roomType": "Standard",
+    "price": 200,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 9, 10],
+    "availability": true
+  },
+
+  {
+    "roomId": 801,
+    "hotelId": 8,
+    "roomNumber": 801,
+    "roomType": "Chalet",
+    "price": 260,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 2,
+    "amenityIds": [1, 5, 6],
+    "availability": true
+  },
+
+  {
+    "roomId": 901,
+    "hotelId": 9,
+    "roomNumber": 901,
+    "roomType": "Suite",
+    "price": 600,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 2, 3, 7, 13],
+    "availability": true
+  },
+
+  {
+    "roomId": 1001,
+    "hotelId": 10,
+    "roomNumber": 1001,
+    "roomType": "Tent",
+    "price": 180,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 9, 11],
+    "availability": true
+  },
+
+  {
+    "roomId": 1101,
+    "hotelId": 11,
+    "roomNumber": 1101,
+    "roomType": "Suite",
+    "price": 300,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 2, 7, 8, 12],
+    "availability": true
+  },
+
+  {
+    "roomId": 1201,
+    "hotelId": 12,
+    "roomNumber": 1201,
+    "roomType": "Standard",
+    "price": 200,
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 0,
+    "amenityIds": [1, 2, 9],
+    "availability": true
   }
 ]

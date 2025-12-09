@@ -2,61 +2,97 @@
   {
     "id": 1,
     "name": "Bali",
-    "description": "A tropical paradise in Indonesia, famous for its beaches, temples, and cultural heritage."
+    "country": "Indonesia",
+    "postOffice": "80113",
+    "numberOfHotels": 2,
+    "description": "A tropical paradise famous for beaches, rice terraces, and spiritual temples."
   },
   {
     "id": 2,
     "name": "Swiss Alps",
-    "description": "A breathtaking mountain region known for skiing, hiking, and panoramic alpine landscapes."
+    "country": "Switzerland",
+    "postOffice": "3800",
+    "numberOfHotels": 2,
+    "description": "Breathtaking alpine mountains offering world-class skiing and scenic hiking trails."
   },
   {
     "id": 3,
     "name": "New York",
-    "description": "The bustling city that never sleeps, full of iconic landmarks, museums, and vibrant nightlife."
+    "country": "USA",
+    "postOffice": "10001",
+    "numberOfHotels": 2,
+    "description": "The city that never sleeps, full of iconic skyscrapers, museums, and vibrant streets."
   },
   {
     "id": 4,
     "name": "Maldives",
-    "description": "A luxury island destination known for crystal-clear waters, coral reefs, and overwater villas."
+    "country": "Maldives",
+    "postOffice": "20209",
+    "numberOfHotels": 2,
+    "description": "Crystal-clear waters, overwater villas, and luxurious private islands perfect for relaxation."
   },
   {
     "id": 5,
     "name": "Tokyo",
-    "description": "The bustling capital of Japan, known for its advanced technology, shopping, and unique blend of old and new."
+    "country": "Japan",
+    "postOffice": "100-0001",
+    "numberOfHotels": 2,
+    "description": "A futuristic city blending cutting-edge technology with traditional Japanese culture."
   },
   {
     "id": 6,
     "name": "Dubai",
-    "description": "A modern city in the UAE known for luxury shopping, skyscrapers, sand dunes, and futuristic attractions."
+    "country": "UAE",
+    "postOffice": "00000",
+    "numberOfHotels": 2,
+    "description": "A modern oasis known for luxury shopping, skyscrapers, desert adventures, and world-class resorts."
   },
   {
     "id": 7,
     "name": "San Diego",
-    "description": "A coastal city in California famous for its beaches, sunny climate, and laid-back lifestyle."
+    "country": "USA",
+    "postOffice": "92101",
+    "numberOfHotels": 1,
+    "description": "A sunny coastal city famous for beaches, parks, and a relaxed California lifestyle."
   },
   {
     "id": 8,
     "name": "Whistler",
-    "description": "A mountain town in Canada known for skiing, snowboarding, and outdoor adventures."
+    "country": "Canada",
+    "postOffice": "V8E 0X5",
+    "numberOfHotels": 1,
+    "description": "A cozy mountain village known for skiing, nature, and year-round outdoor adventure."
   },
   {
     "id": 9,
     "name": "Paris",
-    "description": "The romantic capital of France, famous for the Eiffel Tower, museums, fashion, and gourmet cuisine."
+    "country": "France",
+    "postOffice": "75000",
+    "numberOfHotels": 2,
+    "description": "The romantic city of lights, home to the Eiffel Tower, world-class art, and gourmet cuisine."
   },
   {
     "id": 10,
     "name": "Kruger National Park",
-    "description": "One of Africa’s largest wildlife reserves, known for safari tours and diverse animal species."
+    "country": "South Africa",
+    "postOffice": "1350",
+    "numberOfHotels": 1,
+    "description": "One of the world’s greatest safari destinations with incredible wildlife and landscapes."
   },
   {
     "id": 11,
     "name": "London",
-    "description": "The capital of England, famous for its historical landmarks, museums, and theaters."
+    "country": "England",
+    "postOffice": "SW1A 1AA",
+    "numberOfHotels": 1,
+    "description": "A historic and modern capital known for museums, royal landmarks, and rich cultural life."
   },
   {
     "id": 12,
     "name": "Rome",
-    "description": "The capital of Italy, known for its ancient history, stunning architecture, and delicious food."
+    "country": "Italy",
+    "postOffice": "00100",
+    "numberOfHotels": 1,
+    "description": "An ancient city filled with history, iconic architecture, and delicious Italian gastronomy."
   }
 ]
