@@ -354,6 +354,9 @@ app.post("/api/bookings", (req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.status(200).json({ bookingId: newBooking.bookingId });
 });
+app.get("/api/bookings", (req, res) => {
+  res.json(getJsonData("bookings.json"));
+});
 
 app.get("/api/bookings/:id", (req, res) => {
   const bookings = getJsonData("bookings.json");

@@ -170,5 +170,115 @@
     "price": 350,
     "status": "Confirmed",
     "bookingDate": "2025-12-09T11:15:32.186Z"
+  },
+  {
+    "bookingId": 17,
+    "hotelId": 1,
+    "roomId": 101,
+    "userId": 2,
+    "checkInDate": "2025-12-12",
+    "checkOutDate": "2025-12-31",
+    "price": 200,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-12T13:29:46.121Z"
+  },
+  {
+    "bookingId": 18,
+    "hotelId": 1,
+    "roomId": 102,
+    "userId": 2,
+    "checkInDate": "2025-12-12",
+    "checkOutDate": "2025-12-31",
+    "price": 350,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-12T13:29:46.133Z"
+  },
+  {
+    "bookingId": 19,
+    "hotelId": 1,
+    "roomId": 101,
+    "userId": 2,
+    "checkInDate": "2025-12-09",
+    "checkOutDate": "2025-12-19",
+    "price": 200,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-13T22:55:50.123Z"
+  },
+  {
+    "bookingId": 20,
+    "hotelId": 5,
+    "roomId": 501,
+    "userId": 2,
+    "checkInDate": "2025-12-17",
+    "checkOutDate": "2025-12-20",
+    "price": 280,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-13T22:56:51.223Z"
+  },
+  {
+    "bookingId": 21,
+    "hotelId": 5,
+    "roomId": 502,
+    "userId": 2,
+    "checkInDate": "2025-12-17",
+    "checkOutDate": "2025-12-20",
+    "price": 550,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-13T22:56:51.231Z"
+  },
+  {
+    "bookingId": 22,
+    "hotelId": 2,
+    "roomId": 201,
+    "userId": 2,
+    "checkInDate": "2025-12-09",
+    "checkOutDate": "2025-12-31",
+    "price": 180,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-13T23:03:55.846Z"
+  },
+  {
+    "bookingId": 23,
+    "hotelId": 1,
+    "roomId": 101,
+    "userId": 2,
+    "checkInDate": "2025-12-10",
+    "checkOutDate": "2025-12-19",
+    "price": 200,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-13T23:06:27.041Z"
+  },
+  {
+    "bookingId": 24,
+    "hotelId": 1,
+    "roomId": 102,
+    "userId": 2,
+    "checkInDate": "2025-12-10",
+    "checkOutDate": "2025-12-19",
+    "price": 350,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-13T23:06:27.047Z"
+  },
+  {
+    "bookingId": 25,
+    "hotelId": 3,
+    "roomId": 301,
+    "userId": 2,
+    "checkInDate": "2025-12-10",
+    "checkOutDate": "2025-12-24",
+    "price": 300,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-13T23:14:23.460Z"
+  },
+  {
+    "bookingId": 26,
+    "hotelId": 3,
+    "roomId": 302,
+    "userId": 2,
+    "checkInDate": "2025-12-10",
+    "checkOutDate": "2025-12-24",
+    "price": 500,
+    "status": "Confirmed",
+    "bookingDate": "2025-12-13T23:14:23.469Z"
   }
 ]
