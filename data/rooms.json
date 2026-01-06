@@ -7,7 +7,11 @@
     "price": 200,
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
-    "amenityIds": [1, 2, 10],
+    "amenityIds": [
+      1,
+      2,
+      10
+    ],
     "availability": true
   },
   {
@@ -18,7 +22,13 @@
     "price": 350,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 3, 10, 14],
+    "amenityIds": [
+      1,
+      2,
+      3,
+      10,
+      14
+    ],
     "availability": true
   },
   {
@@ -29,7 +39,13 @@
     "price": 300,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 7, 8, 9],
+    "amenityIds": [
+      1,
+      2,
+      7,
+      8,
+      9
+    ],
     "availability": false
   },
   {
@@ -40,7 +56,11 @@
     "price": 180,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 5, 6],
+    "amenityIds": [
+      1,
+      5,
+      6
+    ],
     "availability": true
   },
   {
@@ -51,10 +71,16 @@
     "price": 320,
     "capacityOfAdults": 4,
     "capacityOfChildren": 2,
-    "amenityIds": [1, 2, 3, 5, 6, 7],
+    "amenityIds": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
     "availability": true
   },
-
   {
     "roomId": 301,
     "hotelId": 3,
@@ -63,7 +89,13 @@
     "price": 300,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 7, 8, 9],
+    "amenityIds": [
+      1,
+      2,
+      7,
+      8,
+      9
+    ],
     "availability": true
   },
   {
@@ -74,10 +106,17 @@
     "price": 500,
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
-    "amenityIds": [1, 2, 3, 4, 8, 9, 12],
+    "amenityIds": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      12
+    ],
     "availability": true
   },
-
   {
     "roomId": 401,
     "hotelId": 4,
@@ -86,7 +125,12 @@
     "price": 450,
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
-    "amenityIds": [1, 2, 10, 14],
+    "amenityIds": [
+      1,
+      2,
+      10,
+      14
+    ],
     "availability": true
   },
   {
@@ -97,10 +141,15 @@
     "price": 700,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 3, 10, 14],
+    "amenityIds": [
+      1,
+      2,
+      3,
+      10,
+      14
+    ],
     "availability": false
   },
-
   {
     "roomId": 501,
     "hotelId": 5,
@@ -109,7 +158,11 @@
     "price": 280,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 3],
+    "amenityIds": [
+      1,
+      2,
+      3
+    ],
     "availability": true
   },
   {
@@ -120,10 +173,14 @@
     "price": 550,
     "capacityOfAdults": 2,
     "capacityOfChildren": 1,
-    "amenityIds": [1, 2, 3, 4],
+    "amenityIds": [
+      1,
+      2,
+      3,
+      4
+    ],
     "availability": true
   },
-
   {
     "roomId": 601,
     "hotelId": 6,
@@ -132,7 +189,12 @@
     "price": 380,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 7, 10],
+    "amenityIds": [
+      1,
+      2,
+      7,
+      10
+    ],
     "availability": true
   },
   {
@@ -143,10 +205,15 @@
     "price": 800,
     "capacityOfAdults": 2,
     "capacityOfChildren": 2,
-    "amenityIds": [1, 2, 3, 7, 14],
+    "amenityIds": [
+      1,
+      2,
+      3,
+      7,
+      14
+    ],
     "availability": false
   },
-
   {
     "roomId": 701,
     "hotelId": 7,
@@ -155,10 +222,13 @@
     "price": 200,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 9, 10],
+    "amenityIds": [
+      1,
+      9,
+      10
+    ],
     "availability": true
   },
-
   {
     "roomId": 801,
     "hotelId": 8,
@@ -167,10 +237,13 @@
     "price": 260,
     "capacityOfAdults": 2,
     "capacityOfChildren": 2,
-    "amenityIds": [1, 5, 6],
+    "amenityIds": [
+      1,
+      5,
+      6
+    ],
     "availability": true
   },
-
   {
     "roomId": 901,
     "hotelId": 9,
@@ -179,10 +252,15 @@
     "price": 600,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 3, 7, 13],
+    "amenityIds": [
+      1,
+      2,
+      3,
+      7,
+      13
+    ],
     "availability": true
   },
-
   {
     "roomId": 1001,
     "hotelId": 10,
@@ -191,10 +269,13 @@
     "price": 180,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 9, 11],
+    "amenityIds": [
+      1,
+      9,
+      11
+    ],
     "availability": true
   },
-
   {
     "roomId": 1101,
     "hotelId": 11,
@@ -203,10 +284,15 @@
     "price": 300,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 7, 8, 12],
+    "amenityIds": [
+      1,
+      2,
+      7,
+      8,
+      12
+    ],
     "availability": true
   },
-
   {
     "roomId": 1201,
     "hotelId": 12,
@@ -215,7 +301,31 @@
     "price": 200,
     "capacityOfAdults": 2,
     "capacityOfChildren": 0,
-    "amenityIds": [1, 2, 9],
+    "amenityIds": [
+      1,
+      2,
+      9
+    ],
+    "availability": true
+  },
+  {
+    "id": 301,
+    "roomNumber": 301,
+    "roomPhotoUrl": "https://cdn.marriottnetwork.com/uploads/sites/24/2021/02/canyon-suites-scottsdale-luxury-collection-king-bedroom.jpg",
+    "roomType": "Executive",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 2,
+    "price": 300,
+    "availability": true
+  },
+  {
+    "id": 401,
+    "roomNumber": 401,
+    "roomPhotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ3j1Zua-X9NSrKSjMtFRDavgHo9QEkRyCFQ&s",
+    "roomType": "Villa",
+    "capacityOfAdults": 2,
+    "capacityOfChildren": 4,
+    "price": 450,
     "availability": true
   }
 ]
